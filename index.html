@@ -33,6 +33,8 @@
         .profile_box {
             background-color: #ff4c68;
             /* color: white; */
+            /* margin-bottom: 10px; */
+            
 
 
         }
@@ -58,18 +60,28 @@
             text-align: center;
         }
 
-        .myskills {
-            background-color: white;
+        .skill_head{
+            background-color: #b34354;
+            text-align: center;
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
         }
 
-
-        .skill_head{
+        .skill_head h1{
+            font-size: 40px;
+        }
+        #skills {
             text-align: center;
+        }
+
+        .skill_image {
+            width: 200px;
         }
 
         @media (max-width: 1000px) {
             .profile_image {
-                width: 400px;
+                width: 300px;
                 padding: 10px 20px 10px 10px;
                 float: none;
                 display: block;
@@ -77,19 +89,25 @@
                 margin-right: auto;
             }
 
-            .about_card {
-                margin-top: 10px;
-                
 
-            }
 
-            .about_text {
-                text-align: center;
-            }
+
         }
 
-        .skill_image{
-            width: 200px;
+        @media (max-width: 500px) {
+            .about_card {
+            margin: 0;
+            padding: 10px 10px;
+            background-color: rgba(172, 87, 87, 0.349);
+            font-size: 20px;
+            font-weight: 500;
+            color: aliceblue;
+
+        }
+        .skill_head h1{
+            font-size: 30px;
+        }
+
         }
     </style>
 
@@ -113,7 +131,7 @@
             <div class="col-lg-6">
                 <div class="card about_card">
                     <div class="card-header about_header">
-                        <h2>About me</h2> 
+                        <h2>About me</h2>
 
                     </div>
                     <div class="card-body about_text">
@@ -133,43 +151,123 @@
 
     </main>
 
+    <div class="skill_head">
+        <h1>Skills Acquired</h1>
+    </div>
     <section id="skills" class="container-fluid myskills">
+
+        
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6 mb-3">
                 <div class="card">
-                    <div class="card-header"></div>
+                    <div class="card-header">
+                        <h2>HTML</h2>
+                    </div>
                     <div class="card-body">
+                        <img class="skill_image" src="img/html.jpg" alt="">
+
 
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6 mb-3">
                 <div class="card">
-                    <div class="card-header"></div>
+                    <div class="card-header">
+                        <h2>HTML</h2>
+
+
+                    </div>
                     <div class="card-body">
+                        <img class="skill_image" src="img/html.jpg" alt="">
 
                     </div>
                 </div>
             </div>
-            </div>
-            <div class="col-md-3">
+
+            <div class="col-lg-3 col-md-6 mb-3">
                 <div class="card">
-                    <div class="card-header"></div>
+                    <div class="card-header">
+                        <h2>HTML</h2>
+
+                    </div>
                     <div class="card-body">
+                        <img class="skill_image" src="img/html.jpg" alt="">
 
                     </div>
                 </div>
             </div>
-            </div>
-            <div class="col-md-3">
+
+            <div class="col-lg-3 col-md-6 mb-3">
                 <div class="card">
-                    <div class="card-header"></div>
+                    <div class="card-header">
+                        <h2>HTML</h2>
+
+                    </div>
                     <div class="card-body">
+                        <img class="skill_image" src="img/html.jpg" alt="">
 
                     </div>
                 </div>
             </div>
+
+        </div>
+
+        
+        <!-- second skill card -->
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>HTML</h2>
+                    </div>
+                    <div class="card-body">
+                        <img class="skill_image" src="img/html.jpg" alt="">
+
+
+                    </div>
+                </div>
             </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>HTML</h2>
+
+
+                    </div>
+                    <div class="card-body">
+                        <img class="skill_image" src="img/html.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>HTML</h2>
+
+                    </div>
+                    <div class="card-body">
+                        <img class="skill_image" src="img/html.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>HTML</h2>
+
+                    </div>
+                    <div class="card-body">
+                        <img class="skill_image" src="img/html.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
