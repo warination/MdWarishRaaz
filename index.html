@@ -8,11 +8,17 @@
     <title>Md Warish Raaz</title>
 
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
     <style>
@@ -24,44 +30,80 @@
             padding: 10px;
         }
 
-        .profile_box{
+        .profile_box {
             background-color: #ff4c68;
             /* color: white; */
 
 
         }
 
-        .profile_image{
-            width: 300px;
-            padding: 10px 20px 10px 30px;
+        .profile_image {
+            width: 400px;
+            padding: 10px 20px 10px 10px;
+            border-radius: 3rem;
+            float: right;
         }
 
-        .about_card{
-            margin: 10px 30px 10px 10px;
+        .about_card {
+            margin: 100px 30px 10px 50px;
             padding: 10px 20px;
             background-color: rgba(172, 87, 87, 0.349);
             font-size: 20px;
             font-weight: 900;
-            
+            color: aliceblue;
+
         }
 
-        .myskills{
+        .about_header {
+            text-align: center;
+        }
+
+        .myskills {
             background-color: white;
         }
 
+
+        .skill_head{
+            text-align: center;
+        }
+
+        @media (max-width: 1000px) {
+            .profile_image {
+                width: 400px;
+                padding: 10px 20px 10px 10px;
+                float: none;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .about_card {
+                margin-top: 10px;
+                
+
+            }
+
+            .about_text {
+                text-align: center;
+            }
+        }
+
+        .skill_image{
+            width: 200px;
+        }
     </style>
 
 
 </head>
 
 <body>
-    <header class="container profile_heading">
+    <header class="container-fluid profile_heading">
         <h1>
             Md Warish Raaz
         </h1>
     </header>
 
-    <main class="container profile_box">
+    <main class="container-fluid profile_box">
 
         <div class="row">
             <div class="col-lg-6">
@@ -70,8 +112,8 @@
 
             <div class="col-lg-6">
                 <div class="card about_card">
-                    <div class="card-header ">
-                        About me
+                    <div class="card-header about_header">
+                        <h2>About me</h2> 
 
                     </div>
                     <div class="card-body about_text">
@@ -91,13 +133,47 @@
 
     </main>
 
-    <section id="skills">
-        <div class="container myskills">
-        
+    <section id="skills" class="container-fluid myskills">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body">
 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body">
 
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+
+                    </div>
+                </div>
+            </div>
+            </div>
         </div>
     </section>
+
+
 
 </body>
 
