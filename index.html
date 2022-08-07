@@ -10,6 +10,7 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -22,6 +23,7 @@
         crossorigin="anonymous"></script>
 
     <style>
+        /* profil image and css */
         .profile_heading {
             background-color: #b34354;
             color: white;
@@ -46,6 +48,7 @@
             float: right;
         }
 
+        /* about me description */
         .about_card {
             margin: 100px 30px 10px 50px;
             padding: 10px 20px;
@@ -56,7 +59,7 @@
 
         }
 
-
+        /* skill css */
 
         .skill_head {
             background-color: #b34354;
@@ -79,21 +82,23 @@
             height: 150px;
         }
 
-        .skill_card_header{
+        .skill_card_header {
             background-color: rgba(127, 127, 218, 0.356);
         }
 
+        /* hobby css */
         .hobby_head {
             background-color: #ef8172;
             text-align: center;
             color: white;
             padding: 10px;
-            
+
         }
 
         .hobby_head h1 {
             font-size: 40px;
         }
+
         #hobby {
             text-align: center;
             background-color: #ce5769ad;
@@ -101,7 +106,7 @@
 
         }
 
-        .hobby_item{
+        .hobby_item {
             padding: 7% 15%;
 
         }
@@ -113,9 +118,20 @@
             margin: 10px;
         }
 
+        .footer_my{
+            position: relative;
+            padding: 20px;
+            background-color: #ef8172;
+            text-align: center;
+        }
+        .social_icon{
+            padding: 10px;
+            color: #126620;
+            
+        }
+       
 
-
-
+        /* responsive css */
         @media (max-width: 1000px) {
             .profile_image {
                 width: 300px;
@@ -171,7 +187,7 @@
             Md Warish Raaz
         </h1>
     </header>
-
+    <!-- profile image and description-->
     <main class="container-fluid profile_box">
 
         <div class="row">
@@ -201,6 +217,8 @@
         </div>
 
     </main>
+
+    <!-- skil description -->
 
     <div class="skill_head">
         <h1>Skills Acquired</h1>
@@ -322,10 +340,13 @@
         </div>
     </section>
 
+    <!-- my hobbies -->
+
     <div class="hobby_head">
         <h1>Hobbies</h1>
     </div>
-    <div id="hobby" class="container-fluid carousel slide" data-target="carousel" data-interval="2000" data-pause="hover">
+    <div id="hobby" class="container-fluid carousel slide" data-target="carousel" data-interval="2000"
+        data-pause="hover">
         <div class="carousel-inner">
             <div class="carousel-item hobby_item active">
                 <div class="row">
@@ -335,7 +356,7 @@
                     </div>
 
                     <div class="col-md-6">
-                        <h4>I love to take a dip in the lake whenever I get a chance.</h4>
+                        <h4>I love to take a dip in the lake whenever I get a chance. Swimming keeps me in shape.</h4>
                         <img class="hobby_image" src="img/swimming.jpeg" alt="swimming-pic">
                     </div>
                 </div>
@@ -345,12 +366,12 @@
             <div class="carousel-item hobby_item">
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <h4>I love to play Cricket and I love watching Cricket matches.</h4>
+                        <h4>I love to play Cricket and I love watching Cricket matches. I am pro at Gully Cricket.</h4>
                         <img class="hobby_image" src="img/cricket.jpg" alt="cricket-pic">
                     </div>
 
                     <div class="col-md-6">
-                        <h4>I am a Hardcore Gamer and I just love playing Videogames.</h4>
+                        <h4>I am a Hardcore Gamer and I just love playing Videogames. I am good at online multiplayer games.</h4>
                         <img class="hobby_image" src="img/dota.jpg" alt="gaming-pic">
                     </div>
                 </div>
@@ -367,7 +388,32 @@
 
         </button>
     </div>
+    <!-- map embeded below-->
+    <div class="container-fluid pl-0 pr-0 mt-1">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1871413.6049128938!2d83.3347989283234!3d23.63642129556722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398b2386df480857%3A0x62c5b809eee29004!2sJharkhand!5e0!3m2!1sen!2sin!4v1659858953611!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+<!-- footer for the social buttons -->
+    <div class="container-fluid footer_my pl-0 pr-0">
+        <a class="social_icon" href="#">
+            <i class="bi bi-facebook"></i>
+        </a>
+        <a class="social_icon" href="#">
+            <i class="bi bi-linkedin"></i>
+        </a>
+        <a class="social_icon" href="#">
+            <i class="bi bi-github"></i>
+        </a>
+        <a class="social_icon" href="#">
+            <i class="bi bi-stack-overflow"></i>
+        </a>
+        <a class="social_icon" href="#">
+            <i class="bi bi-quora"></i>
+        </a>
 
+    </div>
 
 
 </body>
